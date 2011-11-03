@@ -6,12 +6,26 @@
 		<title>popup</title>
 		<meta name="author" content="Brent Labasan" />
 		<!-- Date: 2011-11-02 -->
+		<script type="text/javascript">
+		
+		/* // works. displays the current tabs's url every time you open up the popup page
+			function displayTabURL() {
+				chrome.tabs.getSelected(null, function(tab) {
+					alert(tab.url);
+				});
+			}
+			displayTabURL();
+		*/
+		
+		chrome.tabs.getSelected(null, function(tab) {
+					alert(tab.url);
+				});
+		
+		</script>
 	</head>
 	<body>
-		
 		VOTE ON THIS ARTICLE
 		<br/>
 		VIEW VOTING RESULTS FOR THIS ARTICLE
-		
 	</body>
 </html>
