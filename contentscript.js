@@ -33,7 +33,7 @@ window.onload = function() {
 	newDiv.style.width = "50px";
 	newDiv.style.height = "500px";
 	newDiv.style.top = "20px";
-	newDiv.style.right = "20px";
+	newDiv.style.right = "300px";
 	newDiv.style.zIndex = "9999999999";
 	newDiv.id = "fuckface";
 	//add the text node to the newly created div.
@@ -47,7 +47,8 @@ window.onload = function() {
 	$("#fuckface").click(function(){alert("gee")});
 	
 	//newDiv.innerHTML(" <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" )
-	smang = " <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" ;
+	var myid = chrome.i18n.getMessage("@@extension_id");
+	smang = " <img src='chrome-extension://" + myid + "/images/RAMEdotConstitution_logo300x46.png' />" ;
 	$("#fuckface").html(smang);
 //alert("end of onload script");
 }
