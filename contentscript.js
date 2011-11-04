@@ -2,7 +2,7 @@
  * @author Brent Labasan
  */
 
-alert("content script");
+//alert("content script");
 
 // pops up every time a new page is loaded
 // document.getElementById('header-img-a').innerHTML = 'Fred Flinstone'; // works on reddit.com
@@ -44,6 +44,10 @@ window.onload = function() {
 	//cool = document.getElementById('masthead');
 	//cool.appendChild(newDiv) ;
 	document.body.appendChild(newDiv);
+	$("#fuckface").click(function(){alert("gee")});
+	
+	
+alert("end of onload script");
 }
 
 alert("end of content script");
