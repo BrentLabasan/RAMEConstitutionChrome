@@ -46,8 +46,10 @@ window.onload = function() {
 	document.body.appendChild(newDiv);
 	$("#fuckface").click(function(){alert("gee")});
 	
-	
-alert("end of onload script");
+	//newDiv.innerHTML(" <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" )
+	smang = " <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" ;
+	$("#fuckface").html(smang);
+//alert("end of onload script");
 }
 
-alert("end of content script");
+//alert("end of content script");
