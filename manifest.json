@@ -11,8 +11,8 @@
   ],
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
-      "js": ["jquery.js", "contentscript.js"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"]
     }
     ]
 }
