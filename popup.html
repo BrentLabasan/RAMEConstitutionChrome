@@ -7,23 +7,41 @@
 		<meta name="author" content="Brent Labasan" />
 		<!-- Date: 2011-11-02 -->
 		<script type="text/javascript">
-		
-		/* // works. displays the current tabs's url every time you open up the popup page
-			function displayTabURL() {
+			window.onload = function() {
+				URL = "";
+
+				/* // works. displays the current tabs's url every time you open up the popup page
+				 function displayTabURL() {
+				 chrome.tabs.getSelected(null, function(tab) {
+				 alert(tab.url);
+				 });
+				 }
+				 displayTabURL();
+				 */
+
 				chrome.tabs.getSelected(null, function(tab) {
-					alert(tab.url);
+					URL = tab.url;
+					//alert("1 " + URL);
+					cheese = document.getElementById('articleURL'); // why can't you combine this and the below line?
+					cheese.innerHTML = URL;
+					//blah = chrome.extension.getViews(['popup'])
+					//alert(blah) ;
+					//alert(blah.length);
+					//chrome.extension.getViews(['popup']).document.getElementById('articleURL').innerHTML = 'Fred Flinstone';
+					//document.getElementById('articleURL').innerHTML = 'Fred Flinstone';
+					//document.getElementById('articleURL').innerHTML = URL;
+					//alert("finish");
 				});
-			}
-			displayTabURL();
-		*/
-		
-		chrome.tabs.getSelected(null, function(tab) {
-					alert(tab.url);
-				});
-		
+				//alert("2 " + document.URL);
+
+			};
+
 		</script>
 	</head>
 	<body>
+		<div id="articleURL">
+			test text 1
+		</div>
 		VOTE ON THIS ARTICLE
 		<br/>
 		VIEW VOTING RESULTS FOR THIS ARTICLE

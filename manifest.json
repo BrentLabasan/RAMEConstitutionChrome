@@ -4,7 +4,7 @@
   "description": "The first extension that I made.",
   "browser_action": {
     "default_icon": "icon.png",
-    "popup": "popup.html"
+    "popup": "popup.html" // you cannot use .php
   },
   "permissions": [
     "tabs"
@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*"],
-      "js": ["contentscript.js"]
+      "js": ["jquery.js", "contentscript.js"]
     }
     ]
 }
