@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<title>blahRAME Constitution - Amendment Chooser Confirmation</title>
+		<title>RAME Constitution - Amendment Chooser Confirmation</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
@@ -68,7 +68,7 @@
 
 		<br/><br/>
 
-		Click <a href="article_results.php">HERE</a> to see what Amendments other RAME.Constitution users have voted for !!
+		Click <a href="article_results.php?domain=<?php echo $_GET["domain"];?>&pathname=<?php echo $_GET["pathname"];?>">HERE</a> to see what Amendments other RAME.Constitution users have voted for !!
 
 		<br/>
 
