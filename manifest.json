@@ -12,6 +12,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
+      "exclude_matches": ["*://brentlabasan.com/*"],
       "js": ["jquery.js", "contentscript.js"]
     }
     ]
