@@ -43,12 +43,10 @@ window.onload = function() {
 	votingWindow = document.createElement("div");
 	votingWindowText = document.createTextNode("Voting window text.");
 	votingWindow.appendChild(votingWindowText);
-	votingWindow.style.backgroundColor = "BLUE";
 	votingWindow.style.position = "absolute" ;
-	votingWindow.style.width = "800px";
-	votingWindow.style.height = "900px";
+	votingWindow.style.width = "900px";
 	votingWindow.style.top = "20px";
-	votingWindow.style.right = "380px";
+	votingWindow.style.right = "310px";
 	votingWindow.style.zIndex = "9999999999";
 	votingWindow.style.borderWidth = "thick";
 	votingWindow.style.borderColor = "black";

@@ -32,3 +32,12 @@
 	width: 255px;
 	cursor:pointer;
 }
+#votingWindow {
+	color: WHITE ;
+	background-color: BLACK ;
+	border-style:solid;
+	border-width:3px;
+	border-color: BLACK ;
+	padding: 5px 0 0 0 ;
+	text-align: left;
+}
