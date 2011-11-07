@@ -13,7 +13,8 @@
     {
       "matches": ["http://*/*"],
       "exclude_matches": ["http://brentlabasan.com/*", "https://gmail.com/*", "https://www.facebook.com/*"],
-      "js": ["jquery.js", "contentscript.js"]
+      "js": ["jquery.js", "contentscript.js"],
+      "css": ["style.css"]
     }
     ]
 }

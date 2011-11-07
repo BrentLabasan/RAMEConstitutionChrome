@@ -30,13 +30,13 @@ window.onload = function() {
 	newDiv.style.position = "absolute" ;
 	//newDiv.style.marginRight = "10px";
 	//newDiv.style.marginTop = "15px";
-	newDiv.style.width = "320px";
-	newDiv.style.height = "86px";
+	newDiv.style.width = "260px";
+	//newDiv.style.height = "86px";
 	newDiv.style.top = "20px";
 	newDiv.style.right = "40px";
 	newDiv.style.zIndex = "9999999999";
-	newDiv.style.borderWidth = "thick";
-	newDiv.style.borderColor = "black";
+	//newDiv.style.borderWidth = "thick";
+	//newDiv.style.borderColor = "black";
 	newDiv.id = "fuckface";
 	//add the text node to the newly created div.
 
@@ -69,8 +69,9 @@ window.onload = function() {
 	
 	//newDiv.innerHTML(" <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" )
 	var myid = chrome.i18n.getMessage("@@extension_id");
-	smang = " <img src='chrome-extension://" + myid + "/images/RAMEdotConstitution_logo300x46.png' />" ;
-	smang += "<br/><div id='clickHereToVote'>CLICK HERE TO VOTE</div>" ;
+	smang = " <img src='chrome-extension://" + myid + "/images/logo250px.png' />" ;
+	smang += "<br/><br/><div id='clickHereToVote'>VOTE FOR RELEVANT AMENDMENTS</div>" ;
+	smang += "<div id='viewRelevantAmendments'>VIEW RELEVANT AMENDMENTS</div>" ;
 	$("#fuckface").html(smang);
 	
 	$("#clickHereToVote").click(function() {
