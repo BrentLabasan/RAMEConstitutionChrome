@@ -8,6 +8,15 @@
 	text-align: center;
 }
 
+#fuckface p {
+	color: white ;
+}
+
+#fuckface a:link {color:WHITE; text-decoration: none}      /* unvisited link */
+#fuckface a:visited {color:WHITE; text-decoration: none}  /* visited link */
+#fuckface a:hover {color:WHITE; text-decoration: none}  /* mouse over link */
+#fuckface a:active {color:WHITE; text-decoration: none}  /* selected link */
+
 #clickHereToVote {
 	background-color: BLACK ;
 	color: WHITE ;

@@ -47,7 +47,7 @@ window.onload = function() {
 	votingWindow.style.width = "900px";
 	votingWindow.style.top = "20px";
 	votingWindow.style.right = "310px";
-	votingWindow.style.zIndex = "9999999999";
+	votingWindow.style.zIndex = "999999999999999999999999999999999999999999999999999";
 	votingWindow.style.borderWidth = "thick";
 	votingWindow.style.borderColor = "black";
 	votingWindow.id = "votingWindow";
@@ -70,6 +70,7 @@ window.onload = function() {
 	smang = " <img src='chrome-extension://" + myid + "/images/logo250px.png' />" ;
 	smang += "<br/><br/><div id='clickHereToVote'>VOTE FOR RELEVANT AMENDMENTS</div>" ;
 	smang += "<div id='viewRelevantAmendments'>VIEW RELEVANT AMENDMENTS</div>" ;
+	smang += "<p><a href='http://BrentLabasan.com/RAMEConstitution/index.php' target='_blank'>ABOUT RAME CONSTITUTION</a><br/>A <a href='http://BrentLabasan.com'  target='_blank'>BRENT LABASAN</a> PRODUCTION</p>";
 	$("#fuckface").html(smang);
 	
 	$("#clickHereToVote").click(function() {
