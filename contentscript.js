@@ -25,7 +25,6 @@ window.onload = function() {
 	newDiv = document.createElement("div");
 	newContent = document.createTextNode("Hi there and greetings!");
 	newDiv.appendChild(newContent);
-	
 	newDiv.style.backgroundColor = "GREY";
 	newDiv.style.position = "absolute" ;
 	//newDiv.style.marginRight = "10px";
@@ -34,7 +33,7 @@ window.onload = function() {
 	//newDiv.style.height = "86px";
 	newDiv.style.top = "20px";
 	newDiv.style.right = "40px";
-	newDiv.style.zIndex = "9999999999";
+	newDiv.style.zIndex = "999999999999999999999999999999999999999999999999";
 	//newDiv.style.borderWidth = "thick";
 	//newDiv.style.borderColor = "black";
 	newDiv.id = "fuckface";
@@ -52,6 +51,19 @@ window.onload = function() {
 	votingWindow.style.borderColor = "black";
 	votingWindow.id = "votingWindow";
 
+	resultsWindow = document.createElement("div");
+	resultsWindowText = document.createTextNode("results window text");
+	resultsWindow.appendChild(resultsWindowText);
+	resultsWindow.style.position = "absolute" ;
+	resultsWindow.style.width = "900px";
+	resultsWindow.style.top = "20px";
+	resultsWindow.style.right = "310px";
+	resultsWindow.style.zIndex = "999999999999999999999999999999999999999999999999999";
+	resultsWindow.style.borderWidth = "thick";
+	resultsWindow.style.borderColor = "black";
+	resultsWindow.id = "resultsWindow";
+
+
 	//raps.appendChild(newDiv);
 	//document.body.appendChild(newDiv);
 	//cool = document.getElementsByTagName('body')[0];
@@ -60,6 +72,7 @@ window.onload = function() {
 	
 	document.body.appendChild(newDiv);
 	document.body.appendChild(votingWindow);
+	document.body.appendChild(resultsWindow);
 	
 	$("#votingWindow").hide();
 	
@@ -75,6 +88,12 @@ window.onload = function() {
 	
 	$("#clickHereToVote").click(function() {
 		$("#votingWindow").toggle('slow');
+		$("#resultsWindow").hide();
+	});
+	
+	$("#viewRelevantAmendments").click(function() {
+		$("#resultsWindow").toggle('slow');
+		$("#votingWindow").hide();
 	});
 	
 	lenny = "http://brentlabasan.com/RCon/amendment_chooser_confirmation.php?domain=" + document.domain + "&pathname=" + document.location.pathname ;

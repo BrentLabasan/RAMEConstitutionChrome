@@ -55,6 +55,15 @@
 	padding: 5px 0 0 0 ;
 	text-align: left;
 }
+#resultsWindow {
+	color: WHITE ;
+	background-color: BLACK ;
+	border-style:solid;
+	border-width:3px;
+	border-color: BLACK ;
+	padding: 5px 0 0 0 ;
+	text-align: left;
+}
 
 .inverted {
 	background-color: WHITE ;
