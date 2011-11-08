@@ -10,6 +10,11 @@
 
 #fuckface p {
 	color: white ;
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 9px ;
+	text-align: center;
+	margin: 0 0 0 0;
+	line-height: 100%;
 }
 
 #fuckface a:link {color:WHITE; text-decoration: none}      /* unvisited link */
@@ -49,4 +54,10 @@
 	border-color: BLACK ;
 	padding: 5px 0 0 0 ;
 	text-align: left;
+}
+
+.inverted {
+	background-color: WHITE ;
+	color: BLACK ;
+	
 }
