@@ -1,13 +1,8 @@
-<?php
-session_start();
-?>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-	<meta property="fb:app_id" content="143192419055772" />
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<title>RAME Constitution - Article Results</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="css/RCon.css" />
 		<script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -24,9 +19,11 @@ session_start();
 </script>
 	</head>
 	<body>
-		<h1>LOGO<br/>Article Results</h1>
-		<h2>Article Title: <?php echo $_GET["domain"] ; echo $_GET["pathname"] ; ?></h2>
-		<h3>All RAME Users</h3>
+		<h1><img src="http://brentlabasan.com/RCon/images/logo520px.png" alt="RAME Constitution logo"/>
+		<br/>
+		Article Results</h1>
+		<h2>Article URL: <a href="article_results.php?domain=<?php echo $_GET["domain"];?>&pathname=<?php echo $_GET["pathname"];?>"><?php echo $_GET["domain"] ; echo $_GET["pathname"] ; ?></a></h2>
+		<h3>All RAME Constitution Users</h3>
 		
 		<?php
 		
