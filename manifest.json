@@ -1,13 +1,13 @@
 {
   "name": "RAME Constitution",
+  "background_page": "background.html",
   "version": "0.1",
   "description": "The first extension that I made.",
   "browser_action": {
-    "default_icon": "icon.png",
-    "popup": "popup.html" // you cannot use .php
+    "default_icon": "icon.png"
   },
   "permissions": [
-    "tabs"
+    "tabs", "http://*/*"
   ],
   "content_scripts": [
     {

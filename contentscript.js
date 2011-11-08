@@ -22,6 +22,20 @@ window.onload = function() {
 	//spar = document.getElementsByClassName("body");
 	//raps = spar[0];
 	
+	
+	/*
+	function displayTabURL() {
+				 chrome.tabs.getSelected(null, function(tab) {
+				 alert(tab.url);
+				 });
+				 }
+				 displayTabURL();
+				 */
+	
+	//chrome.tabs.executeScript({file: 'toggler.js'});
+	
+	
+	
 	newDiv = document.createElement("div");
 	newContent = document.createTextNode("Hi there and greetings!");
 	newDiv.appendChild(newContent);

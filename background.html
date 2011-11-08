@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.executeScript(null,
+                           //{code:"alert('hi')"}); // works
+                           {code:"$('#fuckface').toggle();$('#votingWindow').hide();$('#resultsWindow').hide();"}); 
+});
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
