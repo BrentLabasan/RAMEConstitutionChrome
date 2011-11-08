@@ -54,19 +54,27 @@
 	border-color: BLACK ;
 	padding: 5px 0 0 0 ;
 	text-align: left;
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 9px ;
+	text-align: left;
 }
 #resultsWindow {
-	color: WHITE ;
-	background-color: BLACK ;
+	color: BLACK ;
+	background-color: WHITE ;
 	border-style:solid;
 	border-width:3px;
 	border-color: BLACK ;
 	padding: 5px 0 0 0 ;
 	text-align: left;
+	height: 575px ;
 }
 
 .inverted {
 	background-color: WHITE ;
 	color: BLACK ;
 	
+}
+
+iframe {
+	border: 0px;
 }
