@@ -1,10 +1,13 @@
 {
   "name": "RAME Constitution",
+  "icons": { "16": "C-logo-16.png",
+           "48": "C-logo-48.png",
+          "128": "C-logo-128.png" },
   "background_page": "background.html",
-  "version": "0.1",
-  "description": "The first extension that I made.",
+  "version": "0.1.1",
+  "description": "Vote for which Amendments of the United States Constitution are relevant to online news articles.",
   "browser_action": {
-    "default_icon": "icon.png"
+    "default_icon": "C-logo-16.png"
   },
   "permissions": [
     "tabs", "http://*/*"
