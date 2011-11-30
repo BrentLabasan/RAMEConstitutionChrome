@@ -35,9 +35,9 @@
 			echo("You have successfully voted for $N Amendment(s): ");
 			// if articleDomain and articlePath don't exist, create a field with it
 
-			$por = "SELECT * FROM articles WHERE domain = '" . $_GET["domain"] . "' AND pathname = '" . $_GET["pathname"] . "'";
+			$query = "SELECT * FROM articles WHERE domain = '" . $_GET["domain"] . "' AND pathname = '" . $_GET["pathname"] . "'";
 			// doesn't check the domain name part
-			$result = mysql_query($por) or die(mysql_error());
+			$result = mysql_query($query) or die(mysql_error());
 
 			$row = mysql_fetch_array($result);
 
@@ -49,9 +49,9 @@
 
 				//DIAGNOSTICS//echo "<br />";
 
-				$bueno = "INSERT INTO articles (domain, pathname, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, A22, A23, A24, A25, A26, A27) VALUES ('" . $_GET["domain"] . "', '" . $_GET["pathname"] . "', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');";
+				$insert = "INSERT INTO articles (domain, pathname, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, A22, A23, A24, A25, A26, A27) VALUES ('" . $_GET["domain"] . "', '" . $_GET["pathname"] . "', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');";
 
-				mysql_query($bueno);
+				mysql_query($insert);
 
 			}
 
@@ -63,11 +63,11 @@
 
 				//$result = mysql_query("UPDATE articles SET Amend" . $newArray[$i] . "  = Amend" . $newArray[$i] . " + 1 WHERE articleDomain = " . $_SESSION['domain'] . ";");
 
-				$que = "UPDATE articles SET A" . $newArray[$i] . " = A" . $newArray[$i] . " + 1 WHERE domain = '" . $_GET["domain"] . "' AND pathname = '" . $_GET["pathname"] . "'";
+				$update = "UPDATE articles SET A" . $newArray[$i] . " = A" . $newArray[$i] . " + 1 WHERE domain = '" . $_GET["domain"] . "' AND pathname = '" . $_GET["pathname"] . "'";
 
-				//echo $que;
+				//echo $update;
 
-				mysql_query($que, $con);
+				mysql_query($update, $con);
 
 				// NEXT check if article is in database, if not create a field for it
 

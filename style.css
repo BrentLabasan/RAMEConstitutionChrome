@@ -1,4 +1,4 @@
-#fuckface {
+#programWindow {
 	color: WHITE ;
 	border-style:solid;
 	border-width:3px;
@@ -8,7 +8,7 @@
 	text-align: center;
 }
 
-#fuckface p {
+#programWindow p {
 	color: white ;
 	font-family: Arial, Helvetica, sans-serif ;
 	font-size: 9px ;
@@ -17,10 +17,10 @@
 	line-height: 100%;
 }
 
-#fuckface a:link {color:WHITE; text-decoration: none}      /* unvisited link */
-#fuckface a:visited {color:WHITE; text-decoration: none}  /* visited link */
-#fuckface a:hover {color:WHITE; text-decoration: none}  /* mouse over link */
-#fuckface a:active {color:WHITE; text-decoration: none}  /* selected link */
+#programWindow a:link {color:WHITE; text-decoration: none}      /* unvisited link */
+#programWindow a:visited {color:WHITE; text-decoration: none}  /* visited link */
+#programWindow a:hover {color:WHITE; text-decoration: none}  /* mouse over link */
+#programWindow a:active {color:WHITE; text-decoration: none}  /* selected link */
 
 #clickHereToVote {
 	background-color: BLACK ;

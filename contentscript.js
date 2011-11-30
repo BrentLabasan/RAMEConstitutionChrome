@@ -50,7 +50,7 @@ window.onload = function() {
 	newDiv.style.zIndex = "999999999999999999999999999999999999999999999999";
 	//newDiv.style.borderWidth = "thick";
 	//newDiv.style.borderColor = "black";
-	newDiv.id = "fuckface";
+	newDiv.id = "programWindow";
 	//add the text node to the newly created div.
 
 	votingWindow = document.createElement("div");
@@ -91,7 +91,7 @@ window.onload = function() {
 	$("#votingWindow").hide();
 	$("#resultsWindow").hide();
 	
-	//$("#fuckface").click(function(){alert("gee")});
+	//$("#programWindow").click(function(){alert("gee")});
 	
 	//newDiv.innerHTML(" <img src='chrome-extension://@@extension_id/images/RAMEdotConstitution_logo300x46.png' />" )
 	var myid = chrome.i18n.getMessage("@@extension_id");
@@ -99,7 +99,7 @@ window.onload = function() {
 	smang += "<br/><br/><div id='clickHereToVote'>VOTE FOR RELEVANT AMENDMENTS</div>" ;
 	smang += "<div id='viewRelevantAmendments'>VIEW RELEVANT AMENDMENTS</div>" ;
 	smang += "<p><br/><a href='http://BrentLabasan.com/RAMEConstitution/index.php' target='_blank'>ABOUT RAME CONSTITUTION</a><br/>A <a href='http://BrentLabasan.com'  target='_blank'>BRENT LABASAN</a> PRODUCTION<br/><br/></p>";
-	$("#fuckface").html(smang);
+	$("#programWindow").html(smang);
 	
 	$("#clickHereToVote").click(function() {
 		$("#votingWindow").toggle('slow');
